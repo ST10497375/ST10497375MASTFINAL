@@ -30,3 +30,6 @@ To make things more organized, there is a page that filters all the foods into t
 https://github.com/ST10497375/ST10497375MASTFINAL.git
 
 ## Video link
+
+ST10497375: MAST final application
+https://youtube.com/shorts/eXijcB4NRcM?feature=share
