@@ -81,10 +81,7 @@ export default function MenuScreen({ navigation, menu = [], setMenu = () => {} }
         <Text style={styles.addButtonText}>Add Item</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.homeButton} onPress={() => navigation.navigate("Home")}>
-        <Text style={styles.homeButtonText}>Back Home</Text>
-      </TouchableOpacity>
-
+     
           {/* this helps to calculate the average price of the total items */}
       <Text style={styles.label}>
         Menu ({menu.length}) — Avg price: R{getAveragePrice().toFixed(2)}
@@ -99,6 +96,10 @@ export default function MenuScreen({ navigation, menu = [], setMenu = () => {} }
             <Text style={styles.menuCourse}>
               {m.course} • {m.description}
             </Text>
+
+            <TouchableOpacity style={styles.homeButton} onPress={() => navigation.navigate("Home")}>
+              <Text style={styles.homeButtonText}>Back Home</Text>
+            </TouchableOpacity>
           </View>
         ))}
       </ScrollView>
@@ -192,6 +193,20 @@ const styles = StyleSheet.create({
   menuCourse: { color: "#555",
      marginTop: 4 
     },
+
+  homeButton: {
+    backgroundColor: "#236cc6ff",
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    borderRadius: 6,
+    alignItems: "center",
+    marginVertical: 8,
+  },
+
+  homeButtonText: {
+    color: "#fff",
+    fontWeight: "600",
+  },
 
   });
 

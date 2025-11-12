@@ -17,8 +17,13 @@ export default function HomeScreen({ navigation, menu = [], setMenu = () => {} }
 
             onPress={() => navigation.navigate("Menu")}
             >
-                <Text style={styles.buttonText}>Let's Begin!</Text>
+                <Text style={styles.buttonText}>Let's Begin!</Text>     
             </TouchableOpacity>
+
+            <TouchableOpacity style={[styles.button, styles.filterButton]} onPress={() => navigation.navigate("Filter")}>
+                <Text style={styles.buttonText}>Filter Menu</Text>
+            </TouchableOpacity>
+
 
             <FlatList
                 data={menu}
